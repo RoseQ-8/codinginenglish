@@ -1,0 +1,102 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; /* Nunito for a smooth, clean body text */
+}
+
+body, html {
+    height: 100%;
+    background: #eef1f5; /* Light blue-grey for a clean and open feel */
+    color: #2c3d50; /* Darker blue for strong readability */
+    line-height: 1.6;
+}
+
+/* Sidebar Styling */
+aside {
+    background-color: #394867; /* Navy blue for a deep, professional look */
+    color: #ccd6f6; /* Light blue for a soft, contrasting text color */
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    padding: 20px;
+    box-shadow: 3px 0 6px rgba(0,0,0,0.15);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #809bce; /* Soft blue for links, providing a gentle visual appeal */
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccd6f6; /* Very light blue for subtle separation */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #556f94; /* Medium blue for hover background, adding depth */
+    color: #ffffff; /* White for text on hover for high contrast and readability */
+}
+
+/* Main Content Styling */
+main {
+    margin-left: 300px;
+    padding: 40px;
+    background-color: #ffffff; /* Pure white to focus attention on content */
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 300px);
+    background-color: #394867; /* Matching the sidebar for consistency */
+    color: #ccd6f6;
+    text-align: center;
+    padding: 15px 20px;
+    margin-left: 300px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Playfair Display for elegant, noticeable headings */
+    color: #6272a4; /* Greyish blue, soft yet defined */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Links Style */
+a {
+    color: #6272a4; /* Keeping link color consistent with heading tones */
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #5a8dab; /* Brighter blue for active link highlights */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    aside, footer {
+        width: 100%;
+    }
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+    footer {
+        position: relative;
+        margin-left: 0;
+    }
+}
+
+
